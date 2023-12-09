@@ -224,13 +224,21 @@ PRODUCT_PACKAGE_OVERLAYS += vendor/crowdin/overlay
 
 PRODUCT_EXTRA_RECOVERY_KEYS += \
     vendor/lineage/build/target/product/security/lineage
+    
+    
+# Inherit from rro_overlays config
+$(call inherit-product, vendor/evolution/config/rro_overlays.mk)
 
 # Certification
 $(call inherit-product-if-exists, vendor/certification/config.mk)
 
-include vendor/lineage/config/version.mk
+# Conditionally inherit firmware
+TARGET_SHIPS_FIRMWARE ?= false
+ifeq ($(TARGET_SHIPS_FIRMWARE),true)
+$(call inherit-product, vendor/firmware/build/core/config.mk)
+endif
 
+-include vendor/lineage/config/version.mk
 -include vendor/lineage-priv/keys/keys.mk
-
 -include $(WORKSPACE)/build_env/image-auto-bits.mk
 -include vendor/lineage/config/partner_gms.mk

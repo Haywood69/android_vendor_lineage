@@ -948,7 +948,7 @@ function fixup_common_out_dir() {
     if [ ! -z $LINEAGE_FIXUP_COMMON_OUT ]; then
         if [ -d ${common_out_dir} ] && [ ! -L ${common_out_dir} ]; then
             mv ${common_out_dir} ${common_out_dir}-${target_device}
-            ln -s ${common_target_out} ${common_out_dir}
+            ln -s ${common_target_ouhttps://github.com/ProjectMatrixx/android_vendor_lineage/commit/2e03eb1246588cc664ed48ee5d6b4591ab4b9f84t} ${common_out_dir}
         else
             [ -L ${common_out_dir} ] && rm ${common_out_dir}
             mkdir -p ${common_out_dir}-${target_device}
@@ -960,9 +960,9 @@ function fixup_common_out_dir() {
     fi
 }
 
-echo "Building with ThinLTO."
-export GLOBAL_THINLTO=true
-export USE_THINLTO_CACHE=true
+#echo "Building with ThinLTO."
+#export GLOBAL_THINLTO=true
+#export USE_THINLTO_CACHE=true
 
 export SKIP_ABI_CHECKS=true
 export BUILD_BROKEN_DISABLE_BAZEL=true

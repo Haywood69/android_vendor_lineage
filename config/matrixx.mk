@@ -42,7 +42,7 @@ endif
 
 # GAPPS
 ifeq ($(WITH_GMS),true)
-$(call inherit-product-if-exists, vendor/gapps/common/common-vendor.mk)
+$(call inherit-product-if-exists, vendor/gms/gms_full.mk)
 endif
 
 ifneq ($(WITH_GMS),true)
