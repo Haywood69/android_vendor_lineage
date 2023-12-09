@@ -14,11 +14,6 @@
 # limitations under the License.
 #
 
-# RRO Overlays
-PRODUCT_PACKAGES += \
-    AlphaConfigOverlay \
-    PixelLauncherIconsOverlay
-
 # Google Overlays
 PRODUCT_PACKAGES += \
     AccessibilityMenuOverlay \
@@ -26,7 +21,6 @@ PRODUCT_PACKAGES += \
     CaptivePortalLoginOverlay \
     CellBroadcastReceiverOverlay \
     CellBroadcastServiceOverlay \
-    ClearCallingSettingsOverlay2022 \
     ContactsProviderOverlay \
     DMServiceOverlay \
     FlipendoOverlay \
@@ -49,13 +43,18 @@ PRODUCT_PACKAGES += \
     TelephonyProviderOverlay \
     WildlifeSettingsVpnOverlay2022 \
     WildlifeSysuiVpnOverlay2022 \
-    ClearCallingSettingsOverlay2022 \
-    com.android.pixeldisplayservice.auto_generated_rro_product
     ManagedProvisioningPixelOverlay \
     NowPlayingOverlay \
     PixelBatteryHealthOverlay \
     PixelDisableLEDOverlay \
     PixelSetupWizardOverlay2019 \
     PixelSetupWizardOverlay2021 \
-    PixelConnectivityOverlay2022
-    DreamlinerOverlay
+    PixelConnectivityOverlay2022 \
+    DreamlinerOverlay\
+    ClearCallingSettingsOverlay2022 \
+    CarrierSettingsConfigOverlay \
+    CarrierSettingsOverlay \
+    CarrierSettingsProviderOverlay \
+    CarrierSettingsSystemUIOverlay \
+    NowPlayingOverlay \
+
