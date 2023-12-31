@@ -227,7 +227,7 @@ PRODUCT_EXTRA_RECOVERY_KEYS += \
     
     
 # Inherit from rro_overlays config
-$(call inherit-product, vendor/evolution/config/rro_overlays.mk)
+$(call inherit-product, vendor/lineage/config/rro_overlays.mk)
 
 # Certification
 $(call inherit-product-if-exists, vendor/certification/config.mk)
