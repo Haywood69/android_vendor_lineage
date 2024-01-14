@@ -48,7 +48,12 @@ PRODUCT_PACKAGES += \
     TelecomOverlay \
     TelephonyProviderOverlay \
     WildlifeSettingsVpnOverlay2022 \
-    WildlifeSysuiVpnOverlay2022
+    WildlifeSysuiVpnOverlay2022 \
+    ClearCallingSettingsOverlay2022 \
+    CarrierSettingsConfigOverlay \
+    CarrierSettingsOverlay \
+    CarrierSettingsProviderOverlay \
+    CarrierSettingsSystemUIOverlay
 
 PRODUCT_PACKAGES += \
     ManagedProvisioningPixelOverlay \

@@ -305,4 +305,4 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Include Carrier Runtime Configuration
 PRODUCT_PACKAGE_OVERLAYS += \
-    vendor/evolution/CarrierSettings/overlay
+    vendor/lineage/CarrierSettings/overlay
